@@ -49,10 +49,9 @@ order by payment_date;
 SQL-команда для выполнения задания 3
 
 select * 
-from 
- rental 
-where 
- rental_id > (select max(rental_id) - 5 from rental);
+from rental 
+order by rental_id desc 
+limit 5;
 
 ```
 
